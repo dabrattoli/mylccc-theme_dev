@@ -1,22 +1,22 @@
 //@import 'color.scss';
 /*Section 6 Text */
-$latofont: Lato, sans-serif;
-$pt-sansfont: PT Sans, sans-serif;
+$bodyfont: Open Sans, sans-serif;
+$headerfont: Raleway, serif;
 
 p{
   word-break: break-word;
-	font-family: $latofont;
+	font-family: $bodyfont;
 }
 
 a{
-font-family: $latofont;
+font-family: $bodyfont;
 }
 
 .top-bar-section ul li>a {
-font-family: $latofont;
+font-family: $bodyfont;
 }
 h1 ,h2 ,h3, h4, h4 ,h5, h6 ,h7 {
-font-family: $pt-sansfont;
+font-family: $headerfont;
 }
 h3.footer-connect{
 color: #fff; text-align: center;
@@ -26,7 +26,7 @@ color: #fff; text-align: center;
 .lccc-sports-and-recreation-news{background: $lccc-sports-and-recreation-news-bg;}
 .campus-wide{background-color:$campus-wide-bg;}
 .students{background-color:$students-bg;}
-.faculty-student{background-color:$faculty-student-bg;}
+.faculty-staff{background-color:$faculty-student-bg;}
 .staff-student{background-color:$staff-student-bg;}
 .stocker-arts-center-news{background-color: $stocker-arts-center-news-bg;}
 .stocker-arts{background-color:$stocker-arts-bg;}

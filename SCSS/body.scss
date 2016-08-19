@@ -1,9 +1,11 @@
 /*!  Section 2 - Body Styles */
 $mobilebodybreakingpoint: 640px;
 body{
-	font-family: 'Droid Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	    background::none;
 	background-color: #959595;
 background-image: url(images/Convocation.png);
+height: auto;
 }
 .nopadding{padding: 0;}
 .contentdiv{padding:10px;background-color: #ffffff;}
@@ -72,4 +74,3 @@ p.day {
 	.sidebarcontainer{width: 100%;}
 	.content-container{width: 98%;}
 }
-
