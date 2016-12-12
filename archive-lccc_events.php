@@ -135,6 +135,7 @@ $cost = event_meta_box_get_meta('event_meta_box_ticket_price_s_');
 				
 						//$posts will be an array of all posts sorted by post date
 							foreach ( $posts as $post ){
+								  if( $post->event_end_date > $currentdate ){
 								?>
 								<article class="small-12 medium-12 large-12 columns" id="post-<?php echo $post->id->rendered; ?>" >
 										<header class="entry-header">
@@ -178,7 +179,7 @@ $cost = event_meta_box_get_meta('event_meta_box_ticket_price_s_');
 													echo '</div>';
 															echo '</div>';
 														}else{
-															echo '<div class="small-12 medium-12 large-12 columns event-details">';
+															echo '<div class="small-12 medium-12 large-12 columns event-details nopadding">';
 															$eventdate = $post->event_start_date;
 																	if($eventdate !=''){
 															$newDate = date("F j, Y", strtotime($eventdate));
@@ -192,7 +193,7 @@ $cost = event_meta_box_get_meta('event_meta_box_ticket_price_s_');
 																echo '<p>Location: '.$location.'</p>';
 															}
 													echo '</div>';
-															echo '<div class="small-12 medium-12 large-12 columns">';
+															echo '<div class="small-12 medium-12 large-12 columns nopadding">';
 															echo ' <p>' . $post->excerpt->rendered . '</p>' ; 	
 																echo '<a class="button" href="'.$post->link.'">More Information</a>';
 															echo '</div>';	
@@ -204,6 +205,7 @@ $cost = event_meta_box_get_meta('event_meta_box_ticket_price_s_');
 										</div>
 									</article>
 									<?php
+										}
 							}
 				?>
 			</div>
