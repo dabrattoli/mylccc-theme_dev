@@ -7,6 +7,11 @@ body{
 background-image: url(images/Convocation.png);
 height: auto;
 }
+
+div.columns.events-list div.column.row hr{
+	   height: 10px;
+    padding: 1rem 0;
+}
 .nopadding{padding: 0;}
 .contentdiv{padding:10px;background-color: #ffffff;}
 .homeblock{padding: 0; background-color: #F2F2F2;}
@@ -50,6 +55,7 @@ border-bottom: 1px inset #CCC;
 	margin-top: -10px;
 	    padding: 0;
 }
+div.day-listings{height: 30px;}
 .hbheader_category a{
 	float: left;
 	text-align: center;
@@ -62,15 +68,16 @@ border-bottom: 1px inset #CCC;
 .events-list{}
 .todays-event{}
 .todays-event:last-child{}
-.today{}
+.today{} 
 .day{}
-ul.calendarlist li{list-style: none; background:#A6C7C7;margin-bottom: 5px;min-height: 60px;padding: 3px;}
-.clanedardayseventslist li{list-style: none;}
+ul.calendarlist li{list-style: none; background:#fff;margin-bottom: 5px;min-height: 60px;padding: 3px;border: 2px solid #A6C7C7;} 
+div.daycontainer span ul.calendardayseventslist li{ min-height: 35px;border-bottom: 1px solid #dcdcdc;border-top: none;border-left: none;border-right: none;} 
+div.daycontainer span ul.calendardayseventslist li:last-child{ min-height: 35px;border-bottom: none;border-top: none;border-left: none;border-right: none;} 
 span.today-date a{ color: #000;font-weight: bold;font-size: 1.4rem; font-style: italic;}
 span.calendar-today a{ color: #000;font-weight: bold;font-size: 1.4rem; font-style: italic;}
 span.day-date a{ color: #000;font-size: 1.2rem;}
 span.today-date, span.day-date {background: transparent;}
-.daycontainer{background: #fff;min-height: 60px;padding: 2px 7px 10px 7px;}
+.daycontainer{background: #fff;min-height: 90px;padding: 2px 7px 10px 7px;}
 ul.todayseventslist li{border-bottom: 2px solid #eee;background: #fff;min-height: 60px;display: inline-block;}
 ul.todayseventslist li:last-child {border-bottom: none;}
 div.todays-event{border-bottom: 2px solid #eee;}
